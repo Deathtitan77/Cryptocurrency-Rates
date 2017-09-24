@@ -1,0 +1,61 @@
+{
+	"manifest_version": 2,
+
+	"name": "Cryptocurrency Rates",
+
+	"description": "Constantly checks the rates of any cryptocurrency of your choice",
+
+	"version": "1.2.6",
+
+	"short_name": "Crypto Rates",
+
+	"icons":
+	{
+		"128": "images/icon128.png",
+		"48": "images/icon48.png",
+		"16": "images/icon16.png"
+	},
+
+	"browser_action":
+	{
+		"default_title": "Show rates",
+		"default_icon": "images/icon16.png",
+		"default_popup": "popup.html"
+	},
+	
+	"background":
+	{
+
+		"page": "popup.html",
+		"persistent": true
+	},
+
+	"options_page": "options.html",
+
+	"content_scripts":[
+		{
+			"all_frames" : false,
+            "run_at" : "document_end",
+			"matches" : ["<all_urls>"],
+			"js": [ 
+				"jquery-3.2.1.js",
+				"popup.js",
+				"converter.js",
+				"news.js",
+				"values.js"
+			]
+		}
+	],
+
+	"web_accessible_resources":[
+		"about.html"
+	],
+	
+	"permissions":[
+		"storage",
+		"https://*.kraken.com/*",
+		"https://www.kraken.com/",
+		"https://*.rss2json.com/*",
+		"https://www.rss2json.com/*"
+	]
+}

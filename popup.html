@@ -1,0 +1,134 @@
+<html>
+
+	<link rel="stylesheet" type="text/css" href="popup.css">
+	<link rel="stylesheet" type="text/css" href="dropdown.css">
+	<script src="jquery-3.2.1.js"></script>
+	<script src="popup.js"></script>
+	<script src="values.js"></script>
+	<script src="converter.js"></script>
+	<script src="news.js"></script>
+
+	<body id="grad">
+
+		<h1><div class="container">Bitcoin Converter</div></h1>
+
+		<div id="cover" style="display: none"></div> <!-- The cover for everything except the options menu -->
+
+		<input type="image" id="optionsB" class="glowred" src="images/options.png" alt="Options" width="18" height"18"> <!-- Options Button -->
+		
+		<div class="container" id="optionsM" style="display: none"> <!-- Options Menu -->
+
+			<h2>Options:</h2>
+
+			<p>Currency: <select id="currency" class="glowblue" "width: 100px"> <!-- Fiat Currency Selection -->
+				<option value="EUR">Euro</option>
+				<option value="USD">US Dollar</option>
+				<!-- <option value="CAD">CAD Dollar</option> -->
+				<!-- <option value="JPY">Japanese Yen</option> -->
+			</select>
+			</p>
+
+			<p>Cryptocurrency: <select id="crypto" class="glowblue" "width: 100px"> <!-- Cryptocurrency Selection -->
+				<option value="XXBTZ">Bitcoin</option>
+				<option value="XLTCZ">Litecoin</option>
+				<!-- <option value="XDG">Dogecoin</option> -->
+				<!-- <option value="NMC">Namecoin</option> -->
+				<option value="XXRPZ">Ripple</option>
+				<!-- <option value="STR">Stellar</option> -->
+				<option value="XETHZ">Ether</option>
+				<option value="XETCZ">Ether C</option>
+				<!-- <option value="ICN">Iconomi</option> -->
+				<!-- <option value="USDT">Tether</option> -->
+				<option value="DASH">Dash</option>	
+			</select>
+			</p>
+
+			<p>Ticker Source: <a class="link" href="https://www.kraken.com/">Kraken</a></p>
+
+			<p>News Source: <a class="link" href="https://cointelegraph.com/">Cointelegraph</a></p>
+
+			<a href="about.html"><input type="image" alt="Info" src="images/info.png" id="info"></a>
+
+			<p><div id="status"></div></p>
+
+		</div>
+
+		<input class="convert gloworange" id="value" type="text" placeholder="Initial" style="width: 85px"> <!-- Input Textbox -->
+		
+		<select id="first" class="glowblue" style="width: 79px"> <!-- Intial Selection -->
+				<option value="BTC">BTC</option>
+				<option value="cBTC">mBTC</option>
+				<option value="mBTC">mBTC</option>
+				<option value="uBTC">uBTC</option>
+				<option value="Satoshis">Satoshis</option>
+		</select> <strong><b>=</b></strong>
+
+		<input class="convert gloworange" id="result" type="text" placeholder="Result" style="width: 85px" readonly="readonly"> <!-- Result Textbox -->
+
+		<select id="second" class="glowblue" style="width: 79px"> <!-- Convert To Selection -->
+				<option value="BTC">BTC</option>
+				<option value="cBTC">mBTC</option>
+				<option value="mBTC">mBTC</option>
+				<option value="uBTC">uBTC</option>
+				<option value="Satoshis">Satoshis</option>
+		</select>
+
+		<h1><div class="container" id="cryptotitle">Crypto Rates - Currency <small>($)</small></div></h1>
+
+		<table id="current" class="current">
+			<thead>
+				<tr>
+					<th>Current Price</th>
+					<th>Time</th>
+				</tr>
+			</thead>
+		</table>
+
+		<hr>
+
+		<table id="before1">
+			<thead>
+				<tr>
+				  <th>Earlier Prices</th>
+				  <th>Time</th>
+				</tr>
+			</thead>
+		</table>
+
+		<table id="before2">
+			<thead>
+				<tr>
+					<th>Earlier Prices</th>
+					<th>Time</th>
+				</tr>
+			</thead>
+		</table>
+
+		<button id="checkRates" class="glowred">Update</button>
+
+		<marquee id="newsMarquee" scrollamount="5" behavior="scroll" direction="left">
+			<!--> Dear Reader, I would like to announce that my dots are of no harm. I guarantee you that this is only to load the marquee properly.-->
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+			....................................................
+
+		</marquee>
+
+	</body>
+
+</html>

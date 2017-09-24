@@ -1,0 +1,61 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(#FFFF33, orange);
+    background-size: 500px 500%, 500%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 14;
+}
+
+#btcicon{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+}
+
+a{
+    align-content: center;
+}
+
+.container{
+    padding: 3px;
+    margin: 0;
+    box-shadow: 0 3px 0 #FFC800, 0 -1px rgba(255, 200, 0, 0.87) inset;
+    background: #FFA800;
+    border:none;
+    outline:none;
+ }
+
+ #wallet{
+     background-color: grey;
+     border-radius: 15px;
+ }
+ 
+ #back{
+    right: 7;
+    bottom: 35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #FF7B00;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+ }
+
+ #back.focus{
+    box-shadow: 5px 5px 20px #403A3E;
+ }
